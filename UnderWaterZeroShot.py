@@ -29,8 +29,8 @@ def weights_init(m):
 		m.weight.data.normal_(0.0, 0.001)
 
 parser = argparse.ArgumentParser(description='Underwater Image Enhancement')
-parser.add_argument('--TestFolderPath', type=str, default='data/Underwater/data/U45', help='Lowlight Image folder name') 
-parser.add_argument('--SavePath', type=str, default='waterresults/U45', help='SavePath Name')
+parser.add_argument('--TestFolderPath', type=str, default='/content/drive/MyDrive/images/train', help='Lowlight Image folder name') 
+parser.add_argument('--SavePath', type=str, default='/content/drive/MyDrive/images/output', help='SavePath Name')
 args = parser.parse_args()
 
 def _np2Tensor(img):
